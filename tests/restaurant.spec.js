@@ -19,5 +19,6 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     const passedMenu = { food: {}, drinks: {} };
     const recoverMenu = menu.fetchMenu();
     expect(passedMenu).toEqual(recoverMenu);
+    
   });
 });
