@@ -50,6 +50,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     const products2 = productDetails('produto1', 'produto2')
     expect(products2[0]).not.toBe(products2[1]);
+    expect(products2[1]).not.toBe(products2[0]);
 
     // Teste se os dois productIds terminam com 123.
     const products3 = productDetails('Xablau', 'Xablinha');
