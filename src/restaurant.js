@@ -9,10 +9,10 @@ const createMenu = (menu) => {
 };
 // console.log(typeof Object.values(createMenu()));
 // console.log(Object.keys(createMenu({ food: {}, drinks: {} }).fetchMenu()));
-const menu = createMenu({ food: {}, drinks: {} });
+// const menu = createMenu({ food: {}, drinks: {} });
 // const keyMenu = Object.keys(menu.fetchMenu());
 // console.log(keyMenu);
 // console.log(createMenu({ food: {}, drinks: {} }).fetchMenu());
-const recoverMenu = menu.fetchMenu();
-console.log(recoverMenu);
+// const recoverMenu = menu.fetchMenu();
+// console.log(recoverMenu);
 module.exports = createMenu;
