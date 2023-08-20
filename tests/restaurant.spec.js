@@ -4,7 +4,7 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
   it('Verifica se a função `createMenu` tem o comportamento esperado', () => {
     // Escreva todos os testes aqui.
     const menu = createMenu({ food: {}, drinks: {} });
-    
+
     //verifica se a função createMenu() retorna um objeto que possui a chave fetchMenu
     expect(Object.keys(menu)).toContain('fetchMenu');
 
@@ -21,5 +21,7 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     const recoverMenu = menu.fetchMenu();
     expect(passedMenu).toEqual(recoverMenu);
 
+    //verifica se a propriedade consumption do objeto retornado pela função createMenu({ food: {}, drinks: {} }), após a criação do menu, retorna um array vazio.
+    expect(menu.consumption).toEqual([]);
   });
 });

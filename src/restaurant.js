@@ -10,6 +10,7 @@ const createMenu = (menu) => {
 // console.log(typeof Object.values(createMenu()));
 // console.log(Object.keys(createMenu({ food: {}, drinks: {} }).fetchMenu()));
 // const menu = createMenu({ food: {}, drinks: {} });
+// console.log(menu);
 // const keyMenu = Object.keys(menu.fetchMenu());
 // console.log(keyMenu);
 // console.log(createMenu({ food: {}, drinks: {} }).fetchMenu());
