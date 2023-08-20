@@ -4,6 +4,7 @@
 const createMenu = (menu) => {
     const MenuObject = {
         fetchMenu: () => menu,
+        consumption: [],
     };
     return MenuObject;
 };
