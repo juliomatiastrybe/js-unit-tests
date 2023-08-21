@@ -55,7 +55,8 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     expect(typeof menu.pay).toEqual('function');
 
     // verifica se a função pay () retornar a soma dos preços de tudo que foi pedido, conforme registrado em consumption.
-    const totalPay = 9.90 + 3.90 + 6.90 + 3.90;
-    expect(menu2.pay).toBe(totalPay);
+    const totalPay = (9.90 + 3.90 + 6.90 + 3.90) * 1.10;
+    expect(menu2.pay()).toBe(totalPay);
+
   });
 });
