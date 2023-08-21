@@ -47,6 +47,15 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // verifica se a função order aceita que pedidos repetidos sejam acrescidos a consumption.
     menu2.order('coxinha')
     expect(menu2.consumption).toContain('sanduiche', 'coxinha', 'cerveja', 'coxinha');
-    
+
+    // verifica que, ao chamar a função pay() que será uma propriedade do objeto retornado pela função createMenu.
+    expect(Object.keys(menu)).toContain('pay');
+
+    // Verifica se propriedade pay tem como valor uma função.
+    expect(typeof menu.pay).toEqual('function');
+
+    // verifica se a função pay () retornar a soma dos preços de tudo que foi pedido, conforme registrado em consumption.
+    const totalPay = 9.90 + 3.90 + 6.90 + 3.90;
+    expect(menu2.pay).toBe(totalPay);
   });
 });
