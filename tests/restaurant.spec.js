@@ -39,5 +39,10 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     menu2.order('sanduiche');
     expect(menu2.consumption).toContain('sanduiche');
 
+    // verifica se, ao adicionar três pedidos em sequência, dentre bebidas e comidas, o array consumption contém os itens pedidos.
+    menu2.order('coxinha');
+    menu2.order('cerveja');
+    expect(menu2.consumption).toContain('sanduiche', 'coxinha', 'cerveja');
+
   });
 });

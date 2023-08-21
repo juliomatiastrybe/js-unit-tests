@@ -7,8 +7,9 @@ const createMenu = (menu) => {
         consumption: [],
         order: (menuOrder) => {
             const arrayMenu = Object.values(menuObject.fetchMenu());
+            // console.log(arrayMenu);
             const keysArray = Object.keys(arrayMenu[0]).concat(Object.keys(arrayMenu[1]));
-            
+            // console.log(keysArray);
             if (keysArray.includes(menuOrder)) {
                 menuObject.consumption.push(menuOrder);
                 // console.log(menuObject);
@@ -33,6 +34,8 @@ const createMenu = (menu) => {
 // console.log(foods);
 // console.log(Object.keys(foods[1]));
 // menu.order('coxinha');
+// menu.order('agua');
+// menu.order('cerveja');
 // console.log(menu);
 // menu.order('xablau');
 // console.log(menu.order('xablau'));
