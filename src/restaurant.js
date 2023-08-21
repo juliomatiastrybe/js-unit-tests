@@ -36,6 +36,7 @@ const createMenu = (menu) => {
 // menu.order('coxinha');
 // menu.order('agua');
 // menu.order('cerveja');
+// menu.order('cerveja');
 // console.log(menu);
 // menu.order('xablau');
 // console.log(menu.order('xablau'));

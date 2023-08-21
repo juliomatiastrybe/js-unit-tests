@@ -44,5 +44,9 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     menu2.order('cerveja');
     expect(menu2.consumption).toContain('sanduiche', 'coxinha', 'cerveja');
 
+    // verifica se a função order aceita que pedidos repetidos sejam acrescidos a consumption.
+    menu2.order('coxinha')
+    expect(menu2.consumption).toContain('sanduiche', 'coxinha', 'cerveja', 'coxinha');
+    
   });
 });
