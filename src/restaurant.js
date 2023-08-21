@@ -46,8 +46,8 @@ const createMenu = (menu) => {
 // console.log(typeof Object.values(createMenu()));
 // console.log(Object.keys(createMenu({ food: {}, drinks: {} }).fetchMenu()));
 // const menu = createMenu({ food: {}, drinks: {} });
-const menu = createMenu({ food: { coxinha: 3.90, sanduiche: 9.90 },
-    drinks: { agua: 3.90, cerveja: 6.90 } });
+// const menu = createMenu({ food: { coxinha: 3.90, sanduiche: 9.90 },
+//     drinks: { agua: 3.90, cerveja: 6.90 } });
 // console.log(menu);
 // const keyMenu = Object.keys(menu.fetchMenu());
 // console.log(keyMenu);
@@ -56,15 +56,15 @@ const menu = createMenu({ food: { coxinha: 3.90, sanduiche: 9.90 },
 // const foods = Object.values(recoverMenu);
 // console.log(foods);
 // console.log(Object.keys(foods[1]));
-menu.order('sanduiche');
-menu.order('coxinha');
-menu.order('cerveja');
-menu.order('coxinha');
+// menu.order('sanduiche');
+// menu.order('coxinha');
+// menu.order('cerveja');
+// menu.order('coxinha');
 // menu.order('agua');
 // menu.order('cerveja');
 // console.log(menu);
 // menu.order('xablau');
 // console.log(menu.order('xablau'));
 // console.log(menu);
-console.log(menu.pay());
-module.exports = createMenu;
+// console.log(menu.pay());
+// module.exports = createMenu;
