@@ -67,4 +67,4 @@ const createMenu = (menu) => {
 // console.log(menu.order('xablau'));
 // console.log(menu);
 // console.log(menu.pay());
-// module.exports = createMenu;
+module.exports = createMenu;
