@@ -58,8 +58,4 @@ const arrayGenerator = (type, object) => {
   return Object.entries(object);
 };
 
-// console.log(arrayGenerator('key', { sum: 3, mult: 2, div: 0, sub: -1 }));
-// console.log(arrayGenerator('values', { sum: 3, mult: 2, div: 0, sub: -1 }));
-// console.log(arrayGenerator('entries', { sum: 3, mult: 2, div: 0, sub: -1 }));
-// console.log(arrayGenerator('keys', { sum: 4, mult: 3, div: 0, sub: -2 }));
 module.exports = { calculator, arrayGenerator };
